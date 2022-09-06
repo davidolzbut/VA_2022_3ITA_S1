@@ -8,6 +8,7 @@ namespace VA_2022_3ITA_S1
 {
     internal class Class1
     {
+       
 
 
     }
