@@ -225,7 +225,7 @@ do
     //x = x - 1;
     x--;
 } while (x > 0);
-*/
+
 
 Console.Write("=>");
 int vystup;
@@ -250,18 +250,58 @@ foreach (int cislo in cisla)
 {
     Console.WriteLine(cislo);
 }
+
+*/
+
 /*
  *              
  Pouze prirozena cisla (cisla > 0)
+ zadanim neprirozeneho cisla se ukonci cyklus
     1 - soucet
     2 - pocet
     3 - prumer
     4 - maxCislo
     5 - minCislo
+100,200,300,-85
  
  */
 
+Random rnd = new Random();
+// <0;OO)
+int i = rnd.Next(3); // 1-99
 
+for (int j = 0; j < 10; j++)
+{
+    if (j == 2) continue;
+    else if (j == 8) break;
+    else Console.WriteLine(j);
+
+    // some code..
+}
+
+int[] cisla1 = new int[] { 1, 2, 3, 4, 5};
+
+foreach (int cislo in cisla1)
+{
+    switch (cislo)
+    {
+        case 1:
+            Console.WriteLine("Prvni moznost");
+            break;
+        case 2:
+            Console.WriteLine("Prvni moznost");
+            break;
+        case 3:
+            Console.WriteLine("Prvni moznost");
+            break;
+        case 4:
+            Console.WriteLine("Prvni moznost");
+            break;
+        case 5:
+            Console.WriteLine("Prvni moznost");
+            break;
+    }
+}
 
 
 //STOP
